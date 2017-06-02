@@ -1,0 +1,90 @@
+@import "variables";
+// TS
+.tsx, .ts {
+  &.punctuation {
+    &.separator.key-value {
+      color: @nest-text-red;
+    }
+    &.accessor {
+      color: @nest-text-turquoise;
+    }
+    &.definition.typeparameters {
+      color: @nest-text-turquoise;
+    }
+  }
+  &.variable {
+    &.this {
+      color: @nest-text-blue;
+    }
+    &.language.super {
+      color: @nest-text-blue;
+    }
+    &.object {
+      color: @nest-text-red;
+    }
+    &.object.property {
+      color: @nest-text-color;
+    }
+  }
+  &.entity {
+    // &.name.type {
+    //   color: @nest-text-red;
+    // }
+    &.name.class {
+      color: @nest-text-red;
+    }
+    &.name.type.module {
+      color: @nest-text-red;
+    }
+    &.name.function {
+      color: @nest-text-blue;
+    }
+    &.meta.definition.name.function {
+      color: @nest-text-color;
+    }
+    &.other.inherited-class {
+      color: @nest-text-color;
+    }
+  }
+  &.template {
+    .variable.other {
+      color: @nest-text-color;
+    }
+    .variable.other.object {
+      color: @nest-text-red;
+    }
+    .function {
+      color: @nest-text-blue;
+    }
+  }
+  &.annotation {
+    .entity {
+      &.name.type {
+        color: @nest-text-red;
+      }
+    }
+  }
+  &.null {
+    color: @nest-text-red;
+  }
+}
+
+.js, .jsx {
+  &.variable.other.readwrite {
+    color: @nest-text-color;
+  }
+  &.null {
+    color: @nest-text-red;
+  }
+  &.template {
+    .variable.other {
+      color: @nest-text-color;
+    }
+    .variable.other.object {
+      color: @nest-text-red;
+    }
+    .function {
+      color: @nest-text-blue;
+    }
+  }
+}
